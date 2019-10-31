@@ -3,6 +3,12 @@ variable "client_id" {}
 
 variable "client_secret" {}
 
+variable "prefix" {
+  description = "The prefix for the resources created in the specified Azure Resource Group"
+  default = "aks-demo"
+}
+
+
 variable location {
   default = "Central US"
 }
